@@ -1,6 +1,5 @@
 <frontmatter>
   title: "Topic 1"
-  siteNav: site-nav.md
   pageNav: 2
 </frontmatter>
 

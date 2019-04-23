@@ -1,6 +1,5 @@
 <frontmatter>
   title: "Landing Page"
-  siteNav: site-nav.md
   pageNav: 2
 </frontmatter>
 
