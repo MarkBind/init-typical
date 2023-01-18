@@ -1,37 +1,36 @@
 <frontmatter>
-  title: "Landing Page"
+  layout: default.md
   pageNav: 2
+  pageNavTitle: "Chapters of This Page"
 </frontmatter>
 
-<p/>
+<br>
 
-<div class="jumbotron jumbotron-fluid bg-primary text-white">
+<div class="bg-primary text-white py-5 mb-4">
   <div class="container">
-    <h1 class="display-4">Landing Page Title</h1>
+    <h1 class="display-4 no-index">Landing Page Title</h1>
     <p class="lead">A tagline can go here</p>
   </div>
 </div>
 
 # Heading 1
+Some text some text some text some text some text some text some text. **Some text some text some text some text some text ==some text== some text**. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
 
-Some text some text some text some text some text some text some text. **Some text some text some text some text some text ==some text== some text.** Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+**A block quote:**
 
-**A block quote**:
+> Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
 
-<blockquote>
+**A list:**
 
-:fas-quote-left: Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text. :fas-quote-right:
-</blockquote>
-
-**A list**:
 * item A
 * item B
   1. item b1
-  2. item b2
-  3. item b3
+  1. item b2
+  1. item b3
 
-**A `code` example**:
-```xml
+**A `code` example:**
+
+```html
 <foo>
   <bar type="name">goo</bar>
 </foo>
@@ -39,18 +38,16 @@ Some text some text some text some text some text some text some text. **Some te
 
 ## Sub Heading 1.1
 
-A <tooltip content=":exclamation: Some **Important** explanation">tooltip</tooltip>, a <trigger trigger="click" for="modal:context-target">modal</trigger>, a [link](https://markbind.org), a <span class="badge badge-danger">badge</span>, another <span class="badge badge-warning">badge</span>
+A <tooltip content=":exclamation: some **important explanation**" placement="top" trigger="hover">tooltip</tooltip>, a <trigger for="modal:modalinfo" trigger="click">modal</trigger>, a <a href="https://markbind.org/">link</a>, a <span class="badge bg-danger">badge</span>, another <span class="badge bg-warning text-dark">badge</span>.
 
-
-<modal large title="Modal Title" id="modal:context-target">
-
+<modal header="Modal Title" id="modal:modalinfo">
 Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
 </modal>
 
 **A table:**
 
-Column 1 | Column 1 | Column 1 |:far-thumbs-up: / :far-thumbs-down: ?
-:--------| :------: | --------:| :-----------------------------------:
+Column 1 | Column 2 | Column 3 | :far-thumbs-up: / :far-thumbs-down:?
+:------: | :------: | :------: | ----
 value1   | x        | 5        | :far-thumbs-up:
 value2   | y        | 20       | :far-thumbs-down:
 
@@ -59,16 +56,13 @@ value2   | y        | 20       | :far-thumbs-down:
 
 **Media embeds:**
 
-@[youtube](v40b3ExbM0c)
-
-<p/>
+@[youtube](http://www.youtube.com/watch?v=v40b3ExbM0c)
 
 **Tabs:**
 
 <tabs>
   <tab header="Tab X">
-
- Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+    Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
   </tab>
   <tab header="Tab Y">
     ...
@@ -81,39 +75,53 @@ value2   | y        | 20       | :far-thumbs-down:
       ...
     </tab>
   </tab-group>
-
 </tabs>
 
-----------------------------------------------------------------------------------------------------------------------
+<br>
 
 # Heading 2
 
 **Some boxes:**
 
 <box>
-  default
+    default
 </box>
 <box type="info">
-  info
+    info
 </box>
-<box type="warning">
-  warning
+<box type="warning" dismissible>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</box>
+<box type="tip" header="Tip box heading">
+    tip
+</box>
+<box type="success" header="Tip box heading">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</box>
+<box type="important" dismissible header="Tip box heading">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </box>
 
-<p/>
+<br>
 
-----------------------------------------------------------------------------------------------------------------------
+# Heading 3
 
-# Heading 3 
+<panel header="Expandable panel" type="info">
+  Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+</panel>
+<br>
+<panel header="Expanded panel" alt="Minimized panel" type="success" minimized>
+  ...
+</panel>
+<br>
+<panel header="Expanded panel" alt="Minimized panel" type="seamless">
+  ...
+</panel>
+<br>
 
-<panel type="info" header="Expandable panel">
-
-Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text. Some text some text some text some text some text some text some text some text some text some text some text some text some text some text. Some text some text some text some text some text some text. Some text some text some text some text some text some text some text.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<panel header="___Minimal panel **->**___" type="minimal" alt="Minimal panel" popup-url="https://markbind.org/userGuide/components/presentation.html#panels" no-switch>
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </panel>
 
-<p/>
-
-<panel type="success" header="Minimized panel" minimized >
-
-...
-</panel>
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
