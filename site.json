@@ -1,26 +1,25 @@
 {
   "baseUrl": "",
   "titlePrefix": "",
+  "titleSuffix": "",
   "ignore": [
     "_markbind/layouts/*",
     "_markbind/logs/*",
     "_site/*",
     "site.json",
     "*.md",
-    "*.mbd",
-    "*.mbdf",
     "*.njk",
-    ".git/*"
+    ".git/*",
+    "node_modules/*"
   ],
+  "pagesExclude": ["node_modules/*"],
   "pages": [
     {
-      "src": "index.md"
+      "src": "index.md",
+      "title": "Landing Page"
     },
     {
-      "glob": "**/index.md"
-    },
-    {
-      "glob": "**/*.+(md|mbd)"
+      "glob": ["**/index.md", "**/*.md"]
     }
   ],
   "deploy": {
